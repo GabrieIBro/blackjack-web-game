@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blackjack</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+        <script src="index.js"></script>
+    </head>
+
+    <body>
+        <main>
+            
+            <img src="img/table.svg" alt="Blackjack table" class="table">
+            <div class="dealer-score">0</div>
+            <div class="user-score">0</div>
+            <section class="bot-cards-section">
+                
+
+            </section>
+            <section class="user-cards-section">
+
+
+            </section>
+            <section class="button-deck">
+                <button class="hit-button">HIT</button>
+                <button class="insurance-button">INSURANCE</button>
+                <button class="stand-button">STAND</button>
+            </section>
+
+            <section class="greeting-modal-container">
+                <div id="greeting-modal">
+                    <h1>Welcome to Blackjack</h1>
+                    <ul>
+                        <li>The games starts with everyone, besides the dealer, placing a bet.</li>
+                        <li>The dealer deals 2 facing up cards to the player and 2 cards to theirself, only one faces up.</li>
+                        <li>Card 2 through 10 are scored using their face value.</li>
+                        <li>J, Q, K are all equal to 10. A can be 1 or 11.</li>
+                        <li>The goal of the game is having a hand that scores higher than the dealers' but doesn't totals higher than 21.</li>
+                        <li>If your hand scores higher than 21, you lose the round. It also can be referred to as a BUST.</li>
+                        <li>You win automatically if you score 21. If you score lower than 21, you can choose either "HIT" to draw one more card or 
+                            "STAND" to keep your current cards.</li>
+                        <li>If the dealer's facing up card is an ACE, you can hit "INSURANCE" and make a side bet. If the dealer scores 21, you receive your side 
+                            bet 2x, otherwise, you lose it.</li>
+                        <li>Once you choose "STAND", the dealer flips up his facing down card. If their score is less than or equal to 16,
+                             mandatorily, they will have to get one more card. </li>
+                        <li><a href="https://www.wikihow.com/Play-Blackjack" target="_blank">Learn more...</a></li>
+                    </ul>
+                    <div>
+                        <button class="play-button" onclick="closeModal()">PLAY</button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        
+    </body>
+
+</html>
