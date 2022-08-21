@@ -16,18 +16,18 @@ body, main {
 
 main {
     position: relative;
-    height: 95vh;
+    height: unset   ;
     width: 100%;
 }
 
 .table {
-    height: 100%;
+    height: 660px;
 }
 
 .bot-cards-section, .user-cards-section {
     position: absolute;
-    height: 28%;
-    width: 33%;
+    height: 190px;
+    width: 464px;
     border: 0.3vh solid rgba(255, 255, 255, 0.842);
     border-radius: 2vh;
     top: 7%;
@@ -42,23 +42,17 @@ main {
 
 .dealer-score, .user-score {
     background-color: white;
-    border: 0.3vh solid rgb(0, 156, 26);
     position: absolute;
-    height: 10vh;
-    width: 10vh;
+    height: 70px;
+    width: 70px;
     border-radius: 100vh;
-    left: 27.5%;
-    top: 15%;
+    left: -18%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 6vh;
+    font-size: 3rem;
     color: rgb(85, 85, 85);
-}
-
-.user-score {
-    top: 65%;
-    border: 0.3vh solid rgb(0, 131, 22);
+    box-shadow: 0px 0px 15px 0px black;
 }
 
 button {
@@ -71,10 +65,10 @@ main > section > img {
 
 .button-deck {
     position: absolute;
-    width: 80vh;
-    height: 12.3vh;
+    width: 600px;
+    height: 85px;
     background-color: rgba(255, 255, 255, 0.815);
-    border-radius: 2vh;
+    border-radius: 18px;
     bottom: -0.5%;
     display: flex;
     align-items: center;
@@ -86,7 +80,7 @@ main > section > img {
     width: 150px;
     height: 60px;
     border: none;
-    border-radius: 5.3vh;
+    border-radius: 36px;
     font-size: 1.25rem;
     cursor: pointer;
     color: black;

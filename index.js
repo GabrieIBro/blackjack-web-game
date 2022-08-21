@@ -41,3 +41,5 @@ function pickCard() {
         }
     }
 }
+
+document.querySelector(".play-button").addEventListener("clicl", listener)
